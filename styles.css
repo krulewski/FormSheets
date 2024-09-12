@@ -1,0 +1,140 @@
+/* Estiliza o corpo da página */
+body {
+    /* Define a fonte padrão para Arial, Helvetica ou sans-serif */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Aplica um gradiente de fundo linear da esquerda para a direita */
+    background-image: linear-gradient(to right, rgb(1, 46, 98), rgb(9, 63, 4));
+}
+
+/* Estiliza o container principal */
+.box {
+    /* Posiciona o container absolutamente no centro da página */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Define o fundo do container como semi-transparente preto */
+    background-color: rgba(0, 0, 0, 0.4);
+
+    /* Adiciona espaçamento interno e arredonda os cantos */
+    padding: 15px;
+    border-radius: 20px;
+
+    /* Define a largura do container */
+    width: 20%;
+
+    /* Define a cor do texto */
+    color: white;
+}
+
+/* Estiliza o camposet */
+fieldset {
+    /* Adiciona uma borda sólida verde e arredonda os cantos */
+    border: 3px solid green;
+    border-radius: 20px;
+}
+
+/* Estiliza a legenda */
+legend {
+    /* Adiciona uma borda sólida verde e arredonda os cantos */
+    border: 3px solid green;
+
+    /* Adiciona espaçamento interno e alinha o texto centralmente */
+    padding: 10px;
+    text-align: center;
+
+    /* Define o fundo da legenda como verde */
+    background-color: green;
+
+    /* Arredonda os cantos da legenda */
+    border-radius: 10px;
+}
+
+/* Estiliza o container do campo de entrada */
+.inputBox {
+    /* Posiciona o container relativamente */
+    position: relative;
+}
+
+/* Estiliza o campo de entrada */
+.inputUser {
+    /* Remove o fundo e a borda do campo */
+    background: none;
+    border: none;
+
+    /* Adiciona uma borda inferior sólida branca */
+    border-bottom: 1px solid white;
+
+    /* Remove o contorno padrão do campo */
+    outline: none;
+
+    /* Define a cor do texto, tamanho da fonte, largura e espaçamento das letras */
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+/* Estiliza a label do campo de entrada */
+.labelInput {
+    /* Posiciona a label absolutamente no canto superior esquerdo do campo */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    /* Impede que a label seja clicada */
+    pointer-events: none;
+
+    /* Aplica uma transição para a propriedade top */
+    transition: .5s;
+}
+
+/* Estiliza a label quando o campo de entrada está focado ou válido */
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    /* Move a label para cima e define o tamanho da fonte e a cor */
+    top: -20px;
+    font-size: 12px;
+    color: green;
+}
+
+/* Estiliza o campo de data de nascimento */
+#data-nascimento {
+    /* Remove a borda, adiciona espaçamento interno e arredonda os cantos */
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+
+    /* Remove o contorno padrão */
+    outline: none;
+
+    /* Define o tamanho da fonte */
+    font-size: 15px;
+}
+
+/* Estiliza o botão de envio */
+#submit {
+    /* Aplica um gradiente de fundo linear da esquerda para a direita */
+    background-image: linear-gradient(to right, rgb(1, 46, 98), rgb(9, 63, 4));
+
+    /* Define a largura, remove a borda, adiciona espaçamento interno e define a cor */
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+
+    /* Define o tamanho da fonte e o cursor */
+    font-size: 15px;
+    cursor: pointer;
+
+    /* Arredonda os cantos do botão */
+    border-radius: 20px;
+}
+
+/* Estiliza o botão de envio quando o mouse está sobre ele */
+#submit:hover {
+    /* Altera o gradiente de fundo do botão */
+    background-image: linear-gradient(to right, rgb(2, 33, 67), rgb(6, 44, 3));
+}
