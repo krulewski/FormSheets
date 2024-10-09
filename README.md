@@ -19,9 +19,6 @@ Este repositório contém os arquivos HTML e CSS para um formulário de cadastro
 * **CSS:** Estilização da página.
 * **SheetMonkey API:** Envio dos dados para uma planilha Google Sheets.
 
-### Contribuições
-Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhoria, por favor, abra um issue ou faça um pull request.
-
 **Observações:**
 
 `https://form-sheets.vercel.app/`
